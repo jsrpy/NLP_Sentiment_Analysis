@@ -1,4 +1,4 @@
-# Sentiment_Classification_Word_Embeddings
+# Sentiment_Analysis_Word_Embeddings
 Examples of using Keras word embedding to perform sentiment classification on IMDB and Reuters datasets.
 
 ## 1.IMDB
@@ -16,6 +16,21 @@ So generally speaking, we should use a 1D architecture whenever countering textu
 
 #### Results:
 * Test Accuracy: 86.42% 
+
+## 2. Reuters_A
+
+The Reuters datset contains 11,228 newswires from Reuters, labeled over 46 topics. Similar to the IMDB dataset, each wire is encoded  as a sequence of integers.
+
+A CNN is built to classify the news topic of each wire.
+* [Reuters_news_topic_classify_A.ipynb](Reuters_news_topic_classify_A.ipynb)
+This attempt used a similar method as the IMDB sentiment classification, which means the sequence of integers representation of words is retained and directly fed into the convolutional embedding layer. 
+
+#### Results
+This approach does not produce a satisfactory result. A second approach with higher accuracy is demonstrated in the next session.
+
+* Test Accuracy 67.00%
+
+## 3. Reuter_B
 
 # Requirements:
 * keras
