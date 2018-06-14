@@ -23,6 +23,7 @@ The Reuters datset contains 11,228 newswires from Reuters, labeled over 46 topic
 
 A CNN is built to classify the news topic of each wire.
 * [Reuters_news_topic_classify_A](Reuters_news_topic_classify_A.ipynb)
+
 This attempt used a similar method as the IMDB sentiment classification, which means the sequence-of-integers representation of words is retained and directly fed into the convolutional embedding layer. 
 
 #### Results
@@ -33,6 +34,7 @@ This approach does not produce a satisfactory result. A second approach with hig
 ## 3. Reuter_B
 
 * [Reuters_news_topic_classify_B](Reuters_news_topic_classify_B.ipynb)
+
 In this second attempt, the sequence-of-words-integers is vectorise as one-hot word vector, and then fed into a fully-connected perceptrons layer.
 
 #### Results
